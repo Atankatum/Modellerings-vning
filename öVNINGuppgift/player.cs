@@ -9,9 +9,12 @@ namespace öVNINGuppgift
         public int def;
         public int spd;
         public Weapon currentWeapon = new Axe();
-        public float positionx;
-        public float positiony;
-        public float positionz;
         public bool alive = true;
+
+        public int Attack()
+        {
+            return att + currentWeapon.dmg;
+        }
+
     }
 }

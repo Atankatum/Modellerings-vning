@@ -6,12 +6,15 @@ namespace öVNINGuppgift
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Player nisse = new Player();
-            Player elin = new Player();
-            while (nisse.alive == true)
+            Player Sebbe = new Player();
+            Sebbe.hp = 10;
+            Sebbe.def = 5;
+            Sebbe.att = 5;
+            Sebbe.currentWeapon = new NoWeapon();
+            Player Snow = new Player();
+            while (Sebbe.alive == true || Snow.alive == true)
             {
-                System.Console.WriteLine("nisse attacks with his " + nisse.currentWeapon.name);
+                
             }
 
         }
